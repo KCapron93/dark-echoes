@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  background-color: burlywood;
+}
+
+.details {
+  padding: 0.25rem;
+}
+
+.roster li {
+  padding: 1ch;
+  border: 2px solid #070606;
+}
+
+.roster li:hover {
+  cursor: pointer;
+  font-style: italic;
+}
+
+main {
+  display: grid;
+  gap: 1ch;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.roster ul {
+  display: grid;
+  gap: 1ch;
+
+  list-style-type: none;
+  padding: 0.25rem;
+}
